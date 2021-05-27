@@ -37,7 +37,7 @@
          <span class="v13_74">Demanda(TyE)</span>
          <div class="v13_143">
          <div class="v13_144"></div>
-         <span class="v13_145">Regresar</span>
+         <button onclick="location.href='index.php'"  class="v13_145">Regresar</button>
          </div>
          <div class="v13_146">
          <div class="v13_147"></div>

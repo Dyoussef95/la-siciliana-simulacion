@@ -13,7 +13,7 @@
          <div class="v13_87"></div>
          <div class="v13_77">
             <div class="v13_75"></div>
-            <span class="v13_76">Regresar</span>
+            <button onclick="location.href='index.php'" class="v13_76">Regresar</button>
          </div>
          <div class="v13_138">
             <div class="v13_128"></div>
@@ -25,7 +25,12 @@
             <div class="v13_132"></div>
             <div class="v13_133"></div>
             <div class="v13_134"></div>
-            <span class="v13_89">Ravioles de CyQ</span><span class="v13_129">Kg</span><span class="v13_130">Bolsas</span><span class="v13_90">Ravioles de TyE</span><span class="v13_112">A almacenar</span><span class="v13_100">Pérdidas</span>
+            <span class="v13_89">Ravioles de CyQ</span>
+            <span class="v13_129">Kg</span>
+            <span class="v13_130">Bolsas</span>
+            <span class="v13_90">Ravioles de TyE</span>
+            <span class="v13_112">A almacenar</span>
+            <span class="v13_100">Pérdidas</span>
          </div>
          <div class="v13_137">
             <div class="v13_97"></div>

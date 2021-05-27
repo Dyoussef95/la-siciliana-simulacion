@@ -13,178 +13,199 @@
 </head>
 
 <body class="container">
-   <form action="">
-   <div class="container">
-      <div class="row row-cols-2">
-         <div class="col">
-            <div class="panel container">
-               <div class="row">
-                  <span class="text_title">Elaboración de la Masa</span>
+   <form name="formulario" method="post" action="proceso.php">
+      <div class="container">
+         <div class="row row-cols-2">
+            <div class="col">
+               <div class="panel container">
+                  <div class="row">
+                     <span class="text_title">Elaboración de la Masa</span>
+                  </div>
+                  <div class="row">
+                     <div class="col">
+                        <span class="text_item">Harina(Kg)</span>
+                     </div>
+                     <div class="col">
+                        <input type="text" class="box_item">
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col">
+                        <span class="text_item">Huevos(cant)</span>
+                     </div>
+                     <div class="col">
+                        <input type="text" class="box_item">
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col">
+                        <span class="text_item">Sal(Kg)</span>
+                     </div>
+                     <div class="col">
+                        <input type="text" class="box_item">
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col">
+                        <span class="text_item">Conservantes(Kg)</span>
+                     </div>
+                     <div class="col">
+                        <input type="text" class="box_item">
+                     </div>
+                  </div>
                </div>
-               <div class="row">
-                  <div class="col">
-                     <span class="text_item">Harina(Kg)</span>
+            </div>
+            <div class="col">
+               <div class="panel container">
+                  <div class="row">
+                     <div class="col">
+                        <span class="text_title">Elaboración del Relleno</span>
+                     </div>
                   </div>
-                  <div class="col">
-                     <input type="text" class="box_item">
+                  <div class="row">
+                     <div class="col">
+                        <span class="text_item">Ternera(Kg)</span>
+                     </div>
+                     <div class="col">
+                        <input type="text" class="box_item">
+                     </div>
                   </div>
-               </div>
-               <div class="row">
-                  <div class="col">
-                     <span class="text_item">Huevos(cant)</span>
+                  <div class="row">
+                     <div class="col">
+                        <span class="text_item">Espinaca(Kg)</span>
+                     </div>
+                     <div class="col">
+                        <input type="text" class="box_item">
+                     </div>
                   </div>
-                  <div class="col">
-                     <input type="text" class="box_item">
+                  <div class="row">
+                     <div class="col">
+                        <span class="text_item">Calabaza(Kg)</span>
+                     </div>
+                     <div class="col">
+                        <input type="text" class="box_item">
+                     </div>
                   </div>
-               </div>
-               <div class="row">
-                  <div class="col">
-                     <span class="text_item">Sal(Kg)</span>
+                  <div class="row">
+                     <div class="col">
+                        <span class="text_item">Queso(Kg)</span>
+                     </div>
+                     <div class="col">
+                        <input type="text" class="box_item">
+                     </div>
                   </div>
-                  <div class="col">
-                     <input type="text" class="box_item">
+                  <div class="row">
+                     <div class="col">
+                        <span class="text_item">Rebozador(Kg)</span>
+                     </div>
+                     <div class="col">
+                        <input type="text" class="box_item">
+                     </div>
                   </div>
-               </div>
-               <div class="row">
-                  <div class="col">
-                     <span class="text_item">Conservantes(Kg)</span>
+                  <div class="row">
+                     <div class="col">
+                        <span class="text_item">Sal(Kg)</span>
+                     </div>
+                     <div class="col">
+                        <input type="text" class="box_item">
+                     </div>
                   </div>
-                  <div class="col">
-                     <input type="text"  class="box_item">
+                  <div class="row">
+                     <div class="col">
+                        <span class="text_item">Conservantes(Kg)</span>
+                     </div>
+                     <div class="col">
+                        <input type="text" class="box_item">
+                     </div>
                   </div>
                </div>
             </div>
          </div>
-         <div class="col">
-            <div class="panel container">
-               <div class="row">
-                  <div class="col">
-                     <span class="text_title">Elaboración del Relleno</span>
+         <div class="row align-items-end">
+            <div class="col-12">
+               <div class="panel container">
+                  <div class="row">
+                     <div class="col">
+                        <span class="text_title">Otros Factores</span>
+                     </div>
                   </div>
-               </div>
-               <div class="row">
-                  <div class="col">
-                     <span class="text_item">Ternera(Kg)</span>
+                  <div class="row">
+                     <div class="col">
+                        <span class="text_item">Personal</span>
+                     </div>
+                     <div class="col">
+                        <input type="text" class="box_item">
+                     </div>
+                     <div class="col">
+                        <span class="text_item">Demanda(CyQ)</span>
+                     </div>
+                     <div class="col">
+                        <input type="text" class="box_item">
+                     </div>
+                     <div class="col">
+                        <div class="dropdown">
+                           <button type="button" class="button dropdown-toggle" id="dropdownDemanda"
+                              data-bs-toggle="dropdown" aria-expanded="false">
+                              Demanda
+                           </button>
+                           <div class="dropdown-menu" aria-labelledby="dropdownDemanda">
+                              <div class="form-check">
+                                 <input class="form-check-input" type="radio" name="tipoDemanda"
+                                    id="checkDemandaDiaria" value="1" checked>
+                                 <label class="form-check-label" for="checkDemandaDiaria">
+                                    Diaria
+                                 </label>
+                              </div>
+                              <div class="form-check">
+                                 <input class="form-check-input" type="radio" name="tipoDemanda"
+                                    id="checkDemandaMensual" value="2">
+                                 <label class="form-check-label" for="checkDemandaMensual">
+                                    Mensual
+                                 </label>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                   </div>
-                  <div class="col">
-                     <input type="text"  class="box_item">
+                  <div class="row">
+                     <div class="col">
+                        <span class="text_item">Bolsas(cant)</span>
+                     </div>
+                     <div class="col">
+                        <input type="text" class="box_item">
+                     </div>
+                     <div class="col">
+                        <span class="text_item">Demanda(TyE)</span>
+                     </div>
+                     <div class="col">
+                        <input type="text" class="box_item">
+                     </div>
+                     <div class="col">
+                        <button type="submit" class="button">Simular</button>
+                     </div>
                   </div>
-               </div>
-               <div class="row">
-                  <div class="col">
-                     <span class="text_item">Espinaca(Kg)</span>
-                  </div>
-                  <div class="col">
-                     <input type="text"  class="box_item">
-                  </div>
-               </div>
-               <div class="row">
-                  <div class="col">
-                     <span class="text_item">Calabaza(Kg)</span>
-                  </div>
-                  <div class="col">
-                     <input type="text" class="box_item">
-                  </div>
-               </div>
-               <div class="row">
-                  <div class="col">
-                     <span class="text_item">Queso(Kg)</span>
-                  </div>
-                  <div class="col">
-                     <input type="text"  class="box_item">
-                  </div>
-               </div>
-               <div class="row">
-                  <div class="col">
-                     <span class="text_item">Rebozador(Kg)</span>
-                  </div>
-                  <div class="col">
-                     <input type="text"  class="box_item">
-                  </div>
-               </div>
-               <div class="row">
-                  <div class="col">
-                     <span class="text_item">Sal(Kg)</span>
-                  </div>
-                  <div class="col">
-                     <input type="text"  class="box_item">
-                  </div>
-               </div>
-               <div class="row">
-                  <div class="col">
-                     <span class="text_item">Conservantes(Kg)</span>
-                  </div>
-                  <div class="col">
-                     <input type="text"  class="box_item">
+                  <div class="row">
+                     <div class="col">
+                        <span class="text_item">Frigorifico(Cap)</span>
+                     </div>
+                     <div class="col">
+                        <input type="text" class="box_item">
+                     </div>
+                     <div class="col">
+                        <span class="text_item">Horas de trabajo</span>
+                     </div>
+                     <div class="col">
+                        <input type="text" class="box_item">
+                     </div>
+                     <div class="col">
+                        <button type="button" class="button">Salir</button>
+                     </div>
                   </div>
                </div>
             </div>
          </div>
       </div>
-      <div class="row align-items-end">
-         <div class="col-12">
-            <div class="panel container">
-               <div class="row">
-                  <div class="col">
-                     <span class="text_title">Otros Factores</span>
-                  </div>
-               </div>
-               <div class="row">
-                  <div class="col">
-                     <span class="text_item">Personal</span>
-                  </div>
-                  <div class="col">
-                     <input type="text"  class="box_item">
-                  </div>
-                  <div class="col">
-                     <span class="text_item">Demanda(CyQ)</span>
-                  </div>
-                  <div class="col">
-                     <input type="text"  class="box_item">
-                  </div>
-                  <div class="col">
-                     <button type="button" class="button">Demanda</button>
-                  </div>
-               </div>
-               <div class="row">
-                  <div class="col">
-                     <span class="text_item">Bolsas(cant)</span>
-                  </div>
-                  <div class="col">
-                     <input type="text" class="box_item">
-                  </div>
-                  <div class="col">
-                     <span class="text_item">Demanda(TyE)</span>
-                  </div>
-                  <div class="col">
-                     <input type="text" class="box_item">
-                  </div>
-                  <div class="col">
-                     <button type="submit" class="button">Simular</button>
-                  </div>
-               </div>
-               <div class="row">
-                  <div class="col">
-                     <span class="text_item">Frigorifico(Cap)</span>
-                  </div>
-                  <div class="col">
-                     <input type="text"  class="box_item">
-                  </div>
-                  <div class="col">
-                     <span class="text_item">Horas de trabajo</span>
-                  </div>
-                  <div class="col">
-                     <input type="text" class="box_item">
-                  </div>
-                  <div class="col">
-                     <button type="button" class="button">Salir</button>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-</form>
+   </form>
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
