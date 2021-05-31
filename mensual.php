@@ -1,48 +1,157 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-      <link href="./css/mensual.css" rel="stylesheet" />
-      <title>Mensual</title>
-   </head>
-   <body>
-      <div class="v4_148">
-         <div class="v4_151"></div>
-         <div class="v13_45"></div>
-         <span class="v4_157">Para la elaboración del relleno y la masa</span>
-         <span class="v13_46">Recomendaciones</span>
-         <span class="v13_68">Para:</span>
-         <div class="v13_47"></div>
-         <div class="v13_67"></div>
-         <div class="v13_48"></div>
-         <span class="v13_49">Ternera(Kg)</span>
-         <span class="v13_50">Espinaca(Kg)</span>
-         <div class="v13_51"></div>
-         <div class="v13_52"></div>
-         <span class="v13_53">Calabaza(Kg)</span>
-         <span class="v13_54">Queso(Kg)</span>
-         <div class="v13_55"></div>
-         <div class="v13_56"></div>
-         <div class="v13_57"></div>
-         <div class="v13_65"></div>
-         <div class="v13_66"></div>
-         <span class="v13_58">Rebozador(Kg)</span>
-         <span class="v13_59">Sal(Kg)</span>
-         <span class="v13_60">Conservantes(Kg)</span>
-         <span class="v13_61">Harina(Kg)</span>
-         <span class="v13_64">Huevos(cant)</span>
-         <div class="v13_71"></div>
-         <div class="v13_72"></div>
-         <span class="v13_73">Demanda(CyQ)</span>
-         <span class="v13_74">Demanda(TyE)</span>
-         <div class="v13_143">
-         <div class="v13_144"></div>
-         <button onclick="location.href='index.php'"  class="v13_145">Regresar</button>
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+   <link href="./css/main.css" rel="stylesheet" />
+   <title>Mensual</title>
+</head>
+
+<body class="container">
+   <div class="container">
+         <div class="row">
+            <div class="col">
+               <div class="panel container">
+                  <fieldset disabled>
+                  <div class="row">
+                     <div class="col">
+                        <span class="text_item">Para elaboración del relleno y la masa</span>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-8">
+                        <span class="text_item">Ternera(kg)</span>
+                     </div>
+                     <div class="col">
+                        <input type="text" class="box_item">
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-8">
+                        <span class="text_item">Espinaca(kg)</span>
+                     </div>
+                     <div class="col">
+                        <input type="text" class="box_item">
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-8">
+                        <span class="text_item">Calabaza(kg)</span>
+                     </div>
+                     <div class="col">
+                        <input type="text" class="box_item">
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-8">
+                        <span class="text_item">Queso(kg)</span>
+                     </div>
+                     <div class="col">
+                        <input type="text" class="box_item">
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-8">
+                        <span class="text_item">Rebozador(Kg)</span>
+                     </div>
+                     <div class="col">
+                        <input type="text" class="box_item">
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-8">
+                        <span class="text_item">Sal(Kg)</span>
+                     </div>
+                     <div class="col">
+                        <input type="text" class="box_item">
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-8">
+                        <span class="text_item">Conservantes(Kg)</span>
+                     </div>
+                     <div class="col">
+                        <input type="text" class="box_item">
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-8">
+                        <span class="text_item">Harina(Kg)</span>
+                     </div>
+                     <div class="col">
+                        <input type="text" class="box_item">
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-8">
+                        <span class="text_item">Huevos(unidades)</span>
+                     </div>
+                     <div class="col">
+                        <input type="text" class="box_item">
+                     </div>
+                  </div>
+               </fieldset>
+               </div>
+            </div>
+            <div class="col container">
+               <div class="row">
+                  <div class="panel container">
+                     <fieldset disabled="disabled">
+                     <div class="row">
+                        <div class="col">
+                           <span class="text_item">Para</span>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-8">
+                           <span class="text_item">Demanda (CyQ)</span>
+                        </div>
+                        <div class="col">
+                           <input type="text" class="box_item">
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-8">
+                           <span class="text_item">Demanda (TyE))</span>
+                        </div>
+                        <div class="col">
+                           <input type="text" class="box_item">
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col">
+                           <span class="text_item">Recomendaciones</span>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <textarea class="panel_observaciones form-control" rows="5">
+
+                        </textarea>
+                     </div>
+                  </fieldset>
+                     <div class="row">
+                        <div class="col">
+                           <button type="button" class="button" onclick="location.href='index.php'">Regresar</button>
+                        </div>
+                        <div class="col">
+                           <button type="button" class="button">Salir</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
          </div>
-         <div class="v13_146">
-         <div class="v13_147"></div>
-         <span class="v13_148">Salir</span>
-         </div>
-      </div>
-   </body>
+      </fieldset>
+
+   </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+   integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
 </html>
