@@ -1,19 +1,18 @@
 
 <?php
+require 'ControladorDiario.php';
+require 'ControladorProduccion.php';
 
-$cyq=5;
+    $controlador = new ControladorProduccion;
+    $controlador->iniciar($_POST);
+ 
 
-if($_POST['tipoDemanda'] == 1 ){ 
-    header("Location: diario.php?cyq=$cyq"); 
-} 
-elseif($_POST['tipoDemanda'] == 2 ){ 
-    header("Location: mensual.php"); 
-} 
+/*
+demanda y su desviacion de totales
+bolsas y su desviacion
+dias
 
-
+*/
 ?>
 
-<?php
-echo $_POST
-?>
 

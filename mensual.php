@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -15,10 +16,10 @@
 
 <body class="container">
    <div class="container">
-         <div class="row">
-            <div class="col">
-               <div class="panel container">
-                  <fieldset disabled>
+      <div class="row">
+         <div class="col">
+            <div class="panel container">
+               <fieldset disabled>
                   <div class="row">
                      <div class="col">
                         <span class="text_item">Para elaboración del relleno y la masa</span>
@@ -29,7 +30,11 @@
                         <span class="text_item">Ternera(kg)</span>
                      </div>
                      <div class="col">
-                        <input type="text" class="box_item">
+                        <input type="text" class="box_item" value="<?php
+                              session_start();
+                              echo $_SESSION['totalTernera'];
+                             
+                           ?>">
                      </div>
                   </div>
                   <div class="row">
@@ -37,7 +42,10 @@
                         <span class="text_item">Espinaca(kg)</span>
                      </div>
                      <div class="col">
-                        <input type="text" class="box_item">
+                        <input type="text" class="box_item" value="<?php
+                              echo $_SESSION['totalEspinaca'];
+                             
+                           ?>">
                      </div>
                   </div>
                   <div class="row">
@@ -45,7 +53,10 @@
                         <span class="text_item">Calabaza(kg)</span>
                      </div>
                      <div class="col">
-                        <input type="text" class="box_item">
+                        <input type="text" class="box_item" value="<?php
+                              echo $_SESSION['totalCalabaza'];
+                             
+                           ?>">
                      </div>
                   </div>
                   <div class="row">
@@ -53,7 +64,10 @@
                         <span class="text_item">Queso(kg)</span>
                      </div>
                      <div class="col">
-                        <input type="text" class="box_item">
+                        <input type="text" class="box_item" value="<?php
+                              echo $_SESSION['totalQueso'];
+                             
+                           ?>">
                      </div>
                   </div>
                   <div class="row">
@@ -61,23 +75,11 @@
                         <span class="text_item">Rebozador(Kg)</span>
                      </div>
                      <div class="col">
-                        <input type="text" class="box_item">
-                     </div>
-                  </div>
-                  <div class="row">
-                     <div class="col-8">
-                        <span class="text_item">Sal(Kg)</span>
-                     </div>
-                     <div class="col">
-                        <input type="text" class="box_item">
-                     </div>
-                  </div>
-                  <div class="row">
-                     <div class="col-8">
-                        <span class="text_item">Conservantes(Kg)</span>
-                     </div>
-                     <div class="col">
-                        <input type="text" class="box_item">
+                        <input type="text" class="box_item" value="<?php
+                             
+                              echo $_SESSION['totalRebozador'];
+                             
+                           ?>">
                      </div>
                   </div>
                   <div class="row">
@@ -85,24 +87,32 @@
                         <span class="text_item">Harina(Kg)</span>
                      </div>
                      <div class="col">
-                        <input type="text" class="box_item">
+                        <input type="text" class="box_item" value="<?php
+                              
+                              echo $_SESSION['totalHarina'];
+                             
+                           ?>">
                      </div>
                   </div>
                   <div class="row">
                      <div class="col-8">
-                        <span class="text_item">Huevos(unidades)</span>
+                        <span class="text_item">Huevos(kg)</span>
                      </div>
                      <div class="col">
-                        <input type="text" class="box_item">
+                        <input type="text" class="box_item" value="<?php
+                  
+                              echo $_SESSION['totalHuevo']
+                             
+                           ?>">
                      </div>
                   </div>
                </fieldset>
-               </div>
             </div>
-            <div class="col container">
-               <div class="row">
-                  <div class="panel container">
-                     <fieldset disabled="disabled">
+         </div>
+         <div class="col container">
+            <div class="row">
+               <div class="panel container">
+                  <fieldset disabled="disabled">
                      <div class="row">
                         <div class="col">
                            <span class="text_item">Para</span>
@@ -110,43 +120,78 @@
                      </div>
                      <div class="row">
                         <div class="col-8">
-                           <span class="text_item">Demanda (CyQ)</span>
+                           <span class="text_item">Ravioles(paquetes)</span>
                         </div>
                         <div class="col">
-                           <input type="text" class="box_item">
+                           <input type="text" class="box_item" 
+                           value="<?php
+                             
+                              echo $_SESSION['totalRavioles'];
+                             
+                           ?>">
                         </div>
                      </div>
                      <div class="row">
                         <div class="col-8">
-                           <span class="text_item">Demanda (TyE))</span>
+                           <span class="text_item">Bolsas usadas(unidades)</span>
                         </div>
                         <div class="col">
-                           <input type="text" class="box_item">
+                           <input type="text" class="box_item" value="<?php
+                            
+                              echo $_SESSION['totalBolsasUsar'];
+                             
+                           ?>">
                         </div>
                      </div>
                      <div class="row">
+                        <div class="col-8">
+                           <span class="text_item">Cantidad en Frigorifico(paquetes)</span>
+                        </div>
                         <div class="col">
-                           <span class="text_item">Recomendaciones</span>
+                           <input type="text" class="box_item" value="<?php
+                              
+                              echo $_SESSION['totalFrigorifico'];
+                             
+                           ?>">
                         </div>
                      </div>
                      <div class="row">
-                        <textarea class="panel_observaciones form-control" rows="5">
-
-                        </textarea>
+                        <div class="col-8">
+                           <span class="text_item">Tiempo Secado(h)</span>
+                        </div>
+                        <div class="col">
+                           <input type="text" class="box_item" value="<?php
+                              
+                              echo $_SESSION['tiempoSecado'];
+                             
+                           ?>">
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-8">
+                           <span class="text_item">Tiempo Amasado(h)</span>
+                        </div>
+                        <div class="col">
+                           <input type="text" class="box_item" value="<?php
+                              
+                              echo $_SESSION['tiempoAmasado'];
+                             
+                           ?>">
+                        </div>
                      </div>
                   </fieldset>
-                     <div class="row">
-                        <div class="col">
-                           <button type="button" class="button" onclick="location.href='index.php'">Regresar</button>
-                        </div>
-                        <div class="col">
-                           <button type="button" class="button">Salir</button>
-                        </div>
+                  <div class="row">
+                     <div class="col">
+                        <button type="button" class="button" onclick="location.href='index.php'">Regresar</button>
+                     </div>
+                     <div class="col">
+                        <button type="button" class="button">Salir</button>
                      </div>
                   </div>
                </div>
             </div>
          </div>
+      </div>
       </fieldset>
 
    </div>

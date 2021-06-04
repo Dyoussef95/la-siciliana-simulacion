@@ -1,0 +1,39 @@
+function mensual() {
+    document.getElementById("harina").disabled = true;
+    document.getElementById("huevos").disabled = true;
+    document.getElementById("salMasa").disabled = true;
+    document.getElementById("conservantesMasa").disabled = true;
+    document.getElementById("ternera").disabled = true;
+    document.getElementById("espinaca").disabled = true;
+    document.getElementById("calabaza").disabled = true;
+    document.getElementById("queso").disabled = true;
+    document.getElementById("rebozador").disabled = true;
+    document.getElementById("salRelleno").disabled = true;
+    document.getElementById("conservantesRelleno").disabled = true;
+    document.getElementById("personal").disabled = true;
+    document.getElementById("bolsas").disabled = true;
+    document.getElementById("frigorifico").disabled = true;
+    document.getElementById("demandaCYQ").disabled = true;
+    document.getElementById("demandaTYE").disabled = true;
+    document.getElementById("horas").disabled = true;
+  }
+
+  function diario() {
+    document.getElementById("harina").disabled = false;
+    document.getElementById("huevos").disabled = false;
+    document.getElementById("salMasa").disabled = false;
+    document.getElementById("conservantesMasa").disabled = false;
+    document.getElementById("ternera").disabled = false;
+    document.getElementById("espinaca").disabled = false;
+    document.getElementById("calabaza").disabled = false;
+    document.getElementById("queso").disabled = false;
+    document.getElementById("rebozador").disabled = false;
+    document.getElementById("salRelleno").disabled = false;
+    document.getElementById("conservantesRelleno").disabled = false;
+    document.getElementById("personal").disabled = false;
+    document.getElementById("bolsas").disabled = false;
+    document.getElementById("frigorifico").disabled = false;
+    document.getElementById("demandaCYQ").disabled = false;
+    document.getElementById("demandaTYE").disabled = false;
+    document.getElementById("horas").disabled = false;
+  }

@@ -30,19 +30,22 @@
                            <span class="text_item">Bolsas</span>
                         </div>
                      </div>
+                     
                      <div class="row">
                         <div class="col-4">
                            <span class="text_item">Ravioles de CyQ</span>
                         </div>
                         <div class="col">
                            <input type="text" class="box_item" placeholder="<?php
-                           echo $_GET["cyq"];
+                           session_start();
+                           echo $_SESSION["tipoDemanda"];
                            ?>">
                         </div>
                         <div class="col">
                            <input type="text" class="box_item">
                         </div>
                      </div>
+                     
                      <div class="row">
                         <div class="col-4">
                            <span class="text_item">Ravioles de TyE</span>
@@ -65,6 +68,7 @@
                            <input type="text" class="box_item">
                         </div>
                      </div>
+                     
                      <div class="row">
                         <div class="col-4">
                            <span class="text_item">Pérdidas</span>
@@ -78,6 +82,7 @@
                      </div>
                   </div>
                </div>
+               
                <div class="row">
                   <div class="row">
                      <div class="col-8">
@@ -95,17 +100,25 @@
                         <input type="text" class="box_item">
                      </div>
                   </div>
+                  
                   <div class="row">
+                  
                      <div class="col-8">
                         <span class="text_item">¿Se cumple la Demanda?</span>
                      </div>
+                     
                      <div class="col">
                         <input type="text" class="box_item">
                      </div>
+                     
                   </div>
+                  
                </div>
+               
             </div>
+            
          </div>
+         
          <div class="col container">
             <div class="row">
                <div class="panel container">
@@ -124,9 +137,13 @@
                <span class="text_item">Salir</span>
             </div>
          </div>
+
       </div>
+
    </div>
+
 </body>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 
