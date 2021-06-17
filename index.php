@@ -11,70 +11,73 @@
    <title>Simulación</title>
 </head>
 
-<body class="container">
-   <form name="formulario" method="post" action="proceso.php">
-      <div class="container">
-         <div class="row align-items-end">
-            <div class="col-12">
-               <div class="panel container">
-                  <div class="row">
-                     <div class="col">
-                        <span class="text_title">Factores</span>
-                     </div>
-                  </div>
-                  <div class="row">
-                     <div class="col-9">
-                        <div class="row">
-                           <div class="col">
-                              <span class="text_item">Demanda</span>
-                           </div>
-                           <div class="col">
-                              <input type="text" class="box_item" name="demanda" id="demanda">
-                           </div>
-                           <div class="col">
-                              <span class="text_item">&#177;</span>
-                           </div>
-                           <div class="col">
-                              <input type="text" class="box_item" name="desviacionDemanda" id="desviacionDemanda">
-                           </div>
-                        </div>
-                        <div class="row">
-                           <div class="col">
-                              <span class="text_item">Bolsas(cant)</span>
-                           </div>
-                           <div class="col">
-                              <input type="text" class="box_item" name="bolsas" id="bolsas">
-                           </div>
-                           <div class="col">
-                              <span class="text_item">&#177;</span>
-                           </div>
-                           <div class="col">
-                              <input type="text" class="box_item" name="desviacionBolsas" id="desviacionBolsas">
-                           </div>
-                        </div>
-                        <div class="row">
-                           <div class="col">
-                              <span class="text_item">Dias</span>
-                           </div>
-                           <div class="col">
-                              <input type="text" class="box_item" name="dias" id="dias">
-                           </div>
-                           <div class="col-6">
+<body class="text-center">
+   <main class="form-signin border border-dark border-2 rounded-3 bg-light bg-gradient">
 
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col">
-                        <div class="col">
-                           <button type="submit" class="button">Simular</button>
-                        </div>  
-                     </div>
+
+      <form name="formulario" method="post" action="proceso.php" >
+         <div class="row-auto">
+            <div class="col-auto">
+            <img class="mb-4" src="../images/logo.jpg" alt="" width="100" height="100">
+               <h2 class="display-4 text-center">Factores</h2>
+            </div>
+         </div>
+         <div class="row-auto">
+            <div class="col-auto">
+               <div class="row">
+                  <div class="col">
+                     <span class="">Demanda</span>
+                  </div>
+                  <div class="col">
+                     <input type="text" class="form-control" name="demanda" id="demanda">
+                  </div>
+                  <div class="col">
+                     <span class="">&#177;</span>
+                  </div>
+                  <div class="col">
+                     <input type="text" class="form-control" name="desviacionDemanda" id="desviacionDemanda">
+                  </div>
+               </div>
+               <br>
+               <div class="row">
+                  <div class="col">
+                     <span class="">Bolsas(cant)</span>
+                  </div>
+                  <div class="col">
+                     <input type="text" class="form-control" name="bolsas" id="bolsas">
+                  </div>
+                  <div class="col">
+                     <span class="">&#177;</span>
+                  </div>
+                  <div class="col">
+                     <input type="text" class="form-control" name="desviacionBolsas" id="desviacionBolsas">
+                  </div>
+               </div>
+               <br>
+               <div class="row">
+                  <div class="col">
+                     <span class="">Dias</span>
+                  </div>
+                  <div class="col">
+                     <input type="text" class="form-control" name="dias" id="dias">
+                  </div>
+                  <div class="col-6">
+
                   </div>
                </div>
             </div>
          </div>
-      </div>
-   </form>
+         <br>
+         <div class="row">
+            <div class="col">
+               <button type="submit" class="w-100 btn btn-lg btn-secondary">Simular</button>
+            </div>
+         </div>
+      </form>
+
+
+   </main>
+
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>

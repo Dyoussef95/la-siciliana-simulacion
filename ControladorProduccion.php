@@ -78,6 +78,7 @@ class ControladorProduccion
             $this->produccionDiaria = intval($distribucion->normal($datos['demanda'], $datos['desviacionDemanda']));
 
             $this->bolsasDisponibles = intval($distribucion->normal($datos['bolsas'], $datos['desviacionBolsas']));
+
             $u = $distribucion->g();
             $this->cantidadEmpleados = intval(3 + 2 * $u);
 
@@ -131,32 +132,6 @@ class ControladorProduccion
         
         }
 
-/*
-        echo 'calabaza' . $this->totalCalabaza;
-        echo '<br>';
-        echo 'queso' . $this->totalQueso;
-        echo '<br>';
-        echo 'ternera' . $this->totalTernera;
-        echo '<br>';
-        echo 'espinaca' . $this->totalEspinaca;
-        echo '<br>';
-        echo 'rebozador' . $this->totalRebozador;
-        echo '<br>';
-        echo 'cantEnvs:' . $this->cantidadEnvasadaTotal;
-        echo '<br>';
-        echo 'totalHarina'.$this->totalHarina;
-        echo '<br>';
-        echo 'totalHuevos'.$this->totalHuevos;
-        echo '<br>';
-        echo 'cantidadTotalFrigorifico'.$this->cantidadTotalFrigorifico;
-        echo '<br>';
-        echo 'cantidadBolsasUsar'.$this->cantidadBolsasUsadasTotal;
-        echo '<br>';
-        echo 'tiempoSecado'.$this->tiempoSecado;
-        echo '<br>';
-        echo 'TiempoAmasado'.$this->tiempoAmasado;
-        echo '<br>';
-        die();*/
         session_start();
         $_SESSION['totalCalabaza'] = $this->totalCalabaza;
         $_SESSION['totalQueso'] = $this->totalQueso;
@@ -219,6 +194,7 @@ class ControladorProduccion
         if ($this->produccionDiaria % 2 == 0) {
             $this->cantidadHarina = $this->produccionDiaria / 2 * (50 / 300);
             $this->cantidadHuevos = $this->produccionDiaria / 2 * (1.5 / 300);
+           
             $u = $distribucion->g();
             if ($u <= 0.95) {
                 $this->cantidadAamasar = $this->produccionDiaria / 2;
@@ -229,6 +205,7 @@ class ControladorProduccion
                 $this->harinaPerdida = $this->harinaPerdida + $this->cantidadHarina;
                 $this->huevosPerdidos = $this->huevosPerdidos + $this->cantidadHuevos;
             }
+            
             $this->tiempoAmasado = $this->tiempoAmasado + 1;
         } else if ($this->banderaAmasado == 0) { //FALTA INICIALIZAR EN EL DIAGRAMA
             $this->cantidadHarina = intval($this->produccionDiaria / 2) * (50 / 300);
@@ -343,7 +320,7 @@ class ControladorProduccion
                 } else {
                     $this->cantidadDisponibleEnvasar = $this->cantidadDisponibleEnvasar + $this->cantidadCyQ; 
                     $this->tiempoSecado = $this->tiempoSecado + 2;
-                }
+                }    
             }
         } else if ($this->cantidadAsecar < $this->cantidadCyQ && $this->banderaSabor4 == 1) {
             $this->cantidadAsecar = $this->cantidadCyQ;
