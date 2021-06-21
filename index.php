@@ -13,7 +13,16 @@
 
 <body class="text-center">
    <main class="form-signin border border-dark border-2 rounded-3 bg-light bg-gradient">
-
+   <?php
+    session_start();
+      if (isset($_SESSION['validación'])) {
+         if($_SESSION['validación']==0){
+            echo '<p class="text-danger">Las desviaciones deben ser menores a la 3ra parte de la normal</p>';
+         }      
+     }             
+      
+                             
+   ?>
 
       <form name="formulario" method="post" action="proceso.php" >
          <div class="row-auto">
@@ -29,13 +38,13 @@
                      <span class="">Demanda</span>
                   </div>
                   <div class="col">
-                     <input type="text" class="form-control" name="demanda" id="demanda">
+                     <input type="text" class="form-control" name="demanda" id="demanda" required>
                   </div>
                   <div class="col">
                      <span class="">&#177;</span>
                   </div>
                   <div class="col">
-                     <input type="text" class="form-control" name="desviacionDemanda" id="desviacionDemanda">
+                     <input type="text" class="form-control" name="desviacionDemanda" id="desviacionDemanda" required>
                   </div>
                </div>
                <br>
@@ -44,13 +53,13 @@
                      <span class="">Bolsas(cant)</span>
                   </div>
                   <div class="col">
-                     <input type="text" class="form-control" name="bolsas" id="bolsas">
+                     <input type="text" class="form-control" name="bolsas" id="bolsas" required>
                   </div>
                   <div class="col">
                      <span class="">&#177;</span>
                   </div>
                   <div class="col">
-                     <input type="text" class="form-control" name="desviacionBolsas" id="desviacionBolsas">
+                     <input type="text" class="form-control" name="desviacionBolsas" id="desviacionBolsas" required>
                   </div>
                </div>
                <br>
@@ -59,7 +68,7 @@
                      <span class="">Dias</span>
                   </div>
                   <div class="col">
-                     <input type="text" class="form-control" name="dias" id="dias">
+                     <input type="text" class="form-control" name="dias" id="dias" required>
                   </div>
                   <div class="col-6">
 

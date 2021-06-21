@@ -147,7 +147,7 @@ class ControladorProduccion
         $_SESSION['tiempoAmasado'] = $this->tiempoAmasado;
        /* echo $_SESSION['totalCalabaza'];
         die();*/
-        header("Location: mensual.php"); 
+        header("Location: mensual2.php"); 
 
     }
 
