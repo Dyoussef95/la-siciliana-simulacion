@@ -15,7 +15,13 @@ if($desDemanda*3>=$demanda || $desBolsas*3>=$bolsas){
     $_SESSION['validación']=1;
 }
 
-if($_SESSION['validación']==0){
+if($bolsas<$demanda){
+    $_SESSION['validación']=2;
+}else{
+    $_SESSION['validación']=1;
+}
+
+if($_SESSION['validación']==0 || $_SESSION['validación']==2){
     header("Location: index.php");
 }else{
 

@@ -18,7 +18,9 @@
       if (isset($_SESSION['validación'])) {
          if($_SESSION['validación']==0){
             echo '<p class="text-danger">Las desviaciones deben ser menores a la 3ra parte de la normal</p>';
-         }      
+         }else if($_SESSION['validación']==2){
+            echo '<p class="text-danger">La cantidad de bolsas no debe ser menor a la demanda diaria</p>';
+         }       
      }             
       
                              
@@ -38,13 +40,13 @@
                      <span class="">Demanda</span>
                   </div>
                   <div class="col">
-                     <input type="text" class="form-control" name="demanda" id="demanda" required>
+                     <input type="number" class="form-control" name="demanda" id="demanda" required>
                   </div>
                   <div class="col">
                      <span class="">&#177;</span>
                   </div>
                   <div class="col">
-                     <input type="text" class="form-control" name="desviacionDemanda" id="desviacionDemanda" required>
+                     <input type="number" class="form-control" name="desviacionDemanda" id="desviacionDemanda" required>
                   </div>
                </div>
                <br>
@@ -53,13 +55,13 @@
                      <span class="">Bolsas(cant)</span>
                   </div>
                   <div class="col">
-                     <input type="text" class="form-control" name="bolsas" id="bolsas" required>
+                     <input type="number" class="form-control" name="bolsas" id="bolsas" required>
                   </div>
                   <div class="col">
                      <span class="">&#177;</span>
                   </div>
                   <div class="col">
-                     <input type="text" class="form-control" name="desviacionBolsas" id="desviacionBolsas" required>
+                     <input type="number" class="form-control" name="desviacionBolsas" id="desviacionBolsas" required>
                   </div>
                </div>
                <br>
@@ -68,7 +70,7 @@
                      <span class="">Dias</span>
                   </div>
                   <div class="col">
-                     <input type="text" class="form-control" name="dias" id="dias" required>
+                     <input type="number" class="form-control" name="dias" id="dias" required>
                   </div>
                   <div class="col-6">
 

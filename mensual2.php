@@ -110,7 +110,7 @@
                         </div>
                         <div class="row">
                             <div class="col">
-                                <span class="text_item">Huevos(kg)</span>
+                                <span class="text_item">Huevos(u)</span>
                             </div>
                             <div class="col">
                                 <input type="text" class="box_item" value="
@@ -133,7 +133,20 @@
                         </div>
                         <div class="row">
                             <div class="col">
-                                <span class="text_item">Ravioles(paquetes)</span>
+                                <span class="text_item">Produccion total</span>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="box_item" value="
+                            <?php
+
+                            echo $_SESSION['totalProduccion'];
+
+                            ?>">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <span class="text_item">Ravioles empaquetados</span>
                             </div>
                             <div class="col">
                                 <input type="text" class="box_item" value="
@@ -146,7 +159,7 @@
                         </div>
                         <div class="row">
                             <div class="col">
-                                <span>Bolsas usadas(u)</span>
+                                <span>Bolsas sobrantes(u)</span>
                             </div>
                             <div class="col">
                                 <input type="text" class="box_item" value="
@@ -159,7 +172,7 @@
                         </div>
                         <div class="row">
                             <div class="col">
-                                <span class="text_item">Cantidad en Frigorifico (paquetes)</span>
+                                <span class="text_item">Cantidad a Frigorifico (paquetes)</span>
                             </div>
                             <div class="col">
                                 <input type="text" class="box_item" value="
