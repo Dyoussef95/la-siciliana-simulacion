@@ -128,7 +128,7 @@
                     <fieldset disabled="disabled">
                         <div class="row">
                             <div class="col">
-                                <h5>Para:</h5>
+                                <h5>Finales:</h5>
                             </div>
                         </div>
                         <div class="row">
