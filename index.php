@@ -40,13 +40,13 @@
                      <span class="">Demanda</span>
                   </div>
                   <div class="col">
-                     <input type="number" class="form-control" name="demanda" id="demanda" required>
+                     <input type="number" class="form-control" min="1" name="demanda" id="demanda" required>
                   </div>
                   <div class="col">
                      <span class="">&#177;</span>
                   </div>
                   <div class="col">
-                     <input type="number" class="form-control" name="desviacionDemanda" id="desviacionDemanda" required>
+                     <input type="number" class="form-control" min="0" name="desviacionDemanda" id="desviacionDemanda" required>
                   </div>
                </div>
                <br>
@@ -55,13 +55,13 @@
                      <span class="">Bolsas(cant)</span>
                   </div>
                   <div class="col">
-                     <input type="number" class="form-control" name="bolsas" id="bolsas" required>
+                     <input type="number" class="form-control" min="1" name="bolsas" id="bolsas" required>
                   </div>
                   <div class="col">
                      <span class="">&#177;</span>
                   </div>
                   <div class="col">
-                     <input type="number" class="form-control" name="desviacionBolsas" id="desviacionBolsas" required>
+                     <input type="number" class="form-control" min="0" name="desviacionBolsas" id="desviacionBolsas" required>
                   </div>
                </div>
                <br>
@@ -70,7 +70,7 @@
                      <span class="">Dias</span>
                   </div>
                   <div class="col">
-                     <input type="number" class="form-control" name="dias" id="dias" required>
+                     <input type="number" class="form-control" min="1" name="dias" id="dias" required>
                   </div>
                   <div class="col-6">
 
