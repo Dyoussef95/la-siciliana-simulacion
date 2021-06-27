@@ -139,7 +139,7 @@ class ControladorProduccion
             $this->totalBolsas=$this->totalBolsas+$this->produccionDiaria + random_int(1, 10);//*******************NUEVO */
             $this->bolsasSobrantes=intval(($datos['bolsas']-$datos['demanda'])*$datos['dias']+($this->totalBolsas-$this->totalProduccion));
             $this->totalFrigorifico=$this->totalFrigorifico+intval($this->produccionDiaria/15);//***********NUEVO */
-            $this->totalRavioles=$this->totalProduccion+$this->totalFrigorifico;
+            $this->totalRavioles=$this->totalProduccion-$this->totalFrigorifico;
             $this->tiempoSecado=intval($this->totalRavioles/500);
             $this->tiempoAmasado=$this->totalRavioles/300;
             if($this->tiempoSecado<1){
@@ -175,8 +175,8 @@ class ControladorProduccion
         $_SESSION['totalFrigorifico'] = $this->totalFrigorifico;//******************nuevo */
         $_SESSION['tiempoSecado'] =$this->tiempoSecado;//cada 500 ravioles, 2 horas
         $_SESSION['tiempoAmasado'] = $this->tiempoAmasado;//cada 300 ravioles, 1 hora de amasado
-        $_SESSION['totalRavioles'] = $this->totalProduccion;//**aqui era total produccion
-        $_SESSION['totalProduccion'] = $this->totalRavioles;//**aqui era total produccion
+        $_SESSION['totalRavioles'] = $this->totalRavioles;//**aqui era total produccion
+        $_SESSION['totalProduccion'] = $this->totalProduccion;//**aqui era total produccion
        /* echo $_SESSION['totalCalabaza'];
         die();*/
         header("Location: mensual2.php"); 
